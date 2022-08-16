@@ -12,7 +12,6 @@ html {
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     background-color: #ffe5e0;
-    ;
   }
 
   .navbar-brand img {
@@ -106,22 +105,14 @@ html {
         background: none;
     }
     .reviewTitle{
-      font-size: 1rem;
-      margin-right: 1rem !important;
-    }
-    .bizRprt{
-      font-size: 1.8rem;
-    }
-    .nameIndCntry {
       font-size: 1.25rem;
     }
-    /* .modal-header {
-      flex-wrap: wrap;
-    } */
-    /* .modal-header .close {
-      padding: 0rem 1rem;
-      margin: -1rem -1rem -1rem auto;
-    } */
+    .bizRprt{
+      font-size: 1.5rem;
+    }
+    .nameIndCntry {
+      font-size: 1.1rem;
+    }
   }
 
   @media only screen and (max-width: 767.5px) {
@@ -139,12 +130,12 @@ html {
       border-radius: 0.2rem
     }
     
-    .bizRprt{
+    /* .bizRprt{
       font-size: 1.5rem;
     }
     .nameIndCntry, #exchangeLong {
       font-size: 1.1rem;
-    }
+    } */
     
     /* .right img {
       width: 25rem;
@@ -160,6 +151,9 @@ html {
   }
 
   @media only screen and (max-width: 512px) {
+    .reviewTitle{
+      font-size: 1.1rem;
+    }
     .bizRprt{
       font-size: 1.3rem;
     }
@@ -173,6 +167,9 @@ html {
   }
 
   @media only screen and (max-width: 370px) {
+    .reviewTitle{
+      font-size: 0.9rem;
+    }
     .bizRprt{
       font-size: 1.1rem;
     }

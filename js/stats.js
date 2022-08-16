@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    // var apiToken = 'OODbiGvCRN4EehklJBIjiyTkl1dHoOFJ39sb2IIs';
+    var apiToken = 'mVk8ZzDWlfAeaHSAF9ivmIjFavQWyY4lKkiUwNjh';
+
     //fetch industries on page load
     getIndustries();
 
@@ -18,7 +21,7 @@ $(document).ready(function () {
       function getStats() {
         //Get Market Stats
         var params = {
-            api_token: 'OODbiGvCRN4EehklJBIjiyTkl1dHoOFJ39sb2IIs',
+            api_token: `${apiToken}`,
             countries: `${$("#countryStats").val()}`,
             industries: `${$("#industryStats").val()}`,
             limit: '3'
@@ -61,7 +64,7 @@ $(document).ready(function () {
 
       function getIndustries(){
         var params = {
-            api_token: 'OODbiGvCRN4EehklJBIjiyTkl1dHoOFJ39sb2IIs'
+            api_token: `${apiToken}`
         };
         return GetMethod("https://api.marketaux.com/v1/entity/industry/list?", params)
         .then(result => {

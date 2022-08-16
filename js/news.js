@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    // var apiToken = 'OODbiGvCRN4EehklJBIjiyTkl1dHoOFJ39sb2IIs';
+    var apiToken = 'mVk8ZzDWlfAeaHSAF9ivmIjFavQWyY4lKkiUwNjh';
+
     //hide popover button on page load
     $('#newsPopover').hide();
 
@@ -28,7 +31,8 @@ $(document).ready(function () {
       function getFinanceNews() {
         //Get Finance News
         var params = {
-            api_token: 'OODbiGvCRN4EehklJBIjiyTkl1dHoOFJ39sb2IIs',
+            // api_token: 'OODbiGvCRN4EehklJBIjiyTkl1dHoOFJ39sb2IIs',
+            api_token: `${apiToken}`,
             countries: `${$("#country").val()}`,
             industries: `${$("#industry").val()}`,
             filter_entities: true,
@@ -78,7 +82,7 @@ $(document).ready(function () {
 
       function getIndustries(){
         var params = {
-            api_token: 'OODbiGvCRN4EehklJBIjiyTkl1dHoOFJ39sb2IIs'
+            api_token: `${apiToken}`
         };
         return GetMethod("https://api.marketaux.com/v1/entity/industry/list?", params)
         .then(result => {
