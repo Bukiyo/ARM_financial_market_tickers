@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <!-- datatables css -->
+    <link href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/news.css">
+    
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" 
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- jquery-validation -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>
+
+    <!-- datatables js -->
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.26/dist/sweetalert2.all.min.js"></script>
+    
+
+
+
+	<title>News</title>
+
+</head>
+
+<body>
+    <script src="js/news.js"></script>
+
+
+  <div class="header">
+    <div class="menu-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="img/logo4a.png" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="news.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="stats.html">Market Stats</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+  </div>
+
+    <section class="news mt-5">
+        <div class="container">
+            <div class="row newsRow">
+                <div class="col-md-6 left">
+                  <form id="news-form">
+                    <div class="form-group">
+                      <label for="country" class="news-label">Country</label>
+                      <select class="form-control" id="country" name="country">
+                        <option value="null" disabled selected>Select Country</option>
+                        <option value="ar">Argentina</option>
+                        <option value="au">Australia</option>
+                        <option value="be">Belgium</option>
+                        <option value="br">Brazil</option>
+                        <option value="ca">Canada</option>
+                        <option value="ch">Switzerland</option>
+                        <option value="cl">Chile</option>
+                        <option value="cn">China</option>
+                        <option value="cz">Czech Republic</option>
+                        <option value="de">Germany</option>
+                        <option value="dk">Denmark</option>
+                        <option value="ee">Estonia</option>
+                        <option value="eg">Egypt</option>
+                        <option value="es">Spain</option>
+                        <option value="eu">European Union</option>
+                        <option value="fi">Finland</option>
+                        <option value="fr">France</option>
+                        <option value="gb">United Kingdom</option>
+                        <option value="global">Global</option>
+                        <option value="gr">Greece</option>
+                        <option value="hk">Hong Kong</option>
+                        <option value="hu">Hungary</option>
+                        <option value="id">Indonesia</option>
+                        <option value="ie">Ireland</option>
+                        <option value="il">Israel</option>
+                        <option value="in">India</option>
+                        <option value="is">Iceland</option>
+                        <option value="it">Italy</option>
+                        <option value="jp">Japan</option>
+                        <option value="kr">Korea</option>
+                        <option value="lk">Sri Lanka</option>
+                        <option value="lt">Lithuania</option>
+                        <option value="lv">Latvia</option>
+                        <option value="mx">Mexico</option>
+                        <option value="my">Malaysia</option>
+                        <option value="nl">Netherlands</option>
+                        <option value="no">Norway</option>
+                        <option value="nz">New Zealand</option>
+                        <option value="ph">Philippines</option>
+                        <option value="pt">Portugal</option>
+                        <option value="qa">Qatar</option>
+                        <option value="ru">Russian Federation</option>
+                        <option value="sa">Saudi Arabia</option>
+                        <option value="se">Sweden</option>
+                        <option value="tr">Turkey</option>
+                        <option value="tw">Taiwan</option>
+                        <option value="us">United States</option>
+                        <option value="ve">Venezuela</option>
+                        <option value="za">South Africa</option>
+                      </select>
+                    </div>
+                    <div class="form-group" id="selectIndustryDiv">
+                      <label for="industry" class="news-label">Industry</label>
+                      <select class="form-control" id="industry" name="industry">
+                        <option value="null" disabled selected>Select Industry</option>
+                      </select>
+                      <div class="justify-content-center my-1" style=" position: absolute; top: 7.5rem; left: 13rem;" id="industrySpinner">
+                        <div class="spinner-grow spinner-grow-sm text-danger" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                    </div>
+                  </form>
+                    <div id="getNewsBtnDiv">
+                      <button type="button" class="btn btn-danger btn-wide" id="getNewsBtn">
+                        Get News
+                      </button>
+                  </div>
+                </div>
+                <div class="col-md-6 right">
+                  <div>
+                    <img src="img/news5a.png" alt="finance" class="img-fluid">
+                  </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="news-data">
+      <div class="container">
+        <div class="text-right">
+          <button type="button" class="btn btn-dark mb-3" id="newsPopover" 
+          title="News info">Click me!</button>
+        </div>
+        
+       
+        <div class="card">
+          <div class="card-body table-responsive">
+            <table id="newsTable" class="table table-striped table-bordered table-hover" style="width:100%">
+              <thead class="thead-dark">
+                  <tr>
+                      <th>S/N</th>
+                      <th>Name</th>
+                      <th>Symbol</th>
+                      <th>Type</th>
+                      <th>Exchange</th>
+      
+                  </tr>
+              </thead>
+              <tbody class="tableBody"></tbody>
+            </table>
+          </div>
+        </div>
+        
+      </div>
+      
+    </section>
+
+
+
+</body>
+
+ <!-- News Modal -->
+ <div class="modal fade" id="newsModal" tabindex="-1" role="dialog" aria-labelledby="reviewLabel" aria-hidden="true">
+     <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+         <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="reviewTitle mr-5"><i class="fa fa-solid fa-newspaper mr-2"></i>BREAKING NEWS</h4>
+                  <!-- <h4 class="reviewTitle text-warning" id="exchangeLong"></h4> -->
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+             <div class="modal-body">
+              <div class="review-container">
+                <section class="newsMainBodySect">
+                  <div class="card text-white bg-info mb-3">
+                    <div class="card-body mainNewsCard bg-info d-flex justify-content-between">
+                      <div>
+                        <h2 class="card-title bizRprt font-weight-bold">BUSINESS</h2>
+                        <h2 class="card-title bizRprt font-weight-bold text-dark">REPORT</h2>
+                        <h5 class="card-title text-warning font-weight-bold" id="exchangeLong"></h5>
+
+                      </div>
+                      <div>
+                        <h5 class="card-title nameIndCntry font-weight-bold" id="entityName"></h5>
+                        <h5 class="card-title nameIndCntry font-weight-bold" id="entityIndustry"></h5>
+                        <h5 class="card-title nameIndCntry font-weight-bold text-dark" id="entityCountry"></h5>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="newsBodySect">
+                  <ul class="list-container p-0">
+
+                  </ul>
+                </section>
+                
+              </div>
+                 <div class="text-center mt-5">
+                     <button type="button" class="btn btn-outline-danger btn-wide" data-dismiss="modal" aria-label="Close">
+                         Close
+                     </button>
+                 </div>
+
+             </div>
+         </div>
+     </div>
+ </div>
+
+</html>

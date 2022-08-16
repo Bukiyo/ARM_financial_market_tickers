@@ -1,0 +1,124 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffe5e0;
+  }
+
+  .navbar-brand img {
+    width: 10rem;
+  }
+
+  .menu-bar{
+    /* background-image: linear-gradient(-90deg, #d38312, #ffe9f6); */
+    /* background-image: linear-gradient(-90deg, #db5959, #ffffff); */
+    background-image: linear-gradient(-90deg, #ea7fa2, #ffc3c3);
+
+  }
+  
+
+  .nav-link {
+    font-size: 16px;
+    margin: 3px;
+    color: #fff !important;
+    font-weight: 500;
+  }
+
+  .nav-item.active {
+    background: #333;
+}
+
+  .navbar-nav {
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  .menu-bar .navbar-toggler {
+    padding-right: 20px;
+    outline: none !important;
+    border: none !important;
+  }
+
+  .navbar .fa {
+    color: #fff !important;
+    font-size: 26px;
+  }
+
+  .nav-link:hover {
+    font-weight: 600;
+    background: #333;
+    /* border-bottom: 1px solid #fff; */
+  }
+
+  .intro h1{
+    /* font-family: 'DynaPuff', cursive; */
+    /* font-family: 'Abril Fatface', cursive; */
+    font-family: 'Fredoka One', cursive;
+
+  }
+  .intro .container {
+    display: flex;
+    align-items: center;
+    height: 600px;
+  }
+  .left h1 {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  .left p {
+    font-weight: 600;
+  }
+  .left #intro-title-1 {
+    color: #0c0c80;
+  }
+  .left #intro-title-2 {
+    color: orangered;
+  }
+
+
+  @media only screen and (max-width: 992px) {
+    .nav-link:hover {
+        border-bottom: none !important;
+        background: none;
+        
+    }
+    .nav-item.active {
+        background: none;
+    }
+    .left h1 {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .left h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    #getStartedBtn{
+      padding: 0.25rem 0.5rem;
+      font-size: .875rem;
+      line-height: 1.5;
+      border-radius: 0.2rem
+    }
+  }
+
+  @media only screen and (max-width: 575px) {
+    .left h1 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .left p{
+      font-size: 0.9rem;
+    }
+  }
